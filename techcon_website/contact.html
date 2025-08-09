@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - TechCon 2024</title>
 </head>
 <body>
   <header>
     <h1>Contact Us</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="schedule.html">Schedule</a> |
+      <a href="register.html">Register</a>
     </nav>
   </header>
 
   <main>
-    <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+    <section>
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+      <p>
+        Social Media:
+        <a href="https://twitter.com/TechCon2024" target="_blank" rel="noopener noreferrer">Twitter</a> |
+        <a href="https://facebook.com/TechCon2024" target="_blank" rel="noopener noreferrer">Facebook</a> |
+        <a href="https://linkedin.com/company/TechCon2024" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </section>
 
-    <p>Follow us on social media:</p>
-    <ul>
-      <li><a href="https://twitter.com/techcon" target="_blank">Twitter</a></li>
-      <li><a href="https://linkedin.com/company/techcon" target="_blank">LinkedIn</a></li>
-    </ul>
+    <section>
+      <h2>Venue Location</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509158!2d-122.40138108468102!3d37.793617179756755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a9b4e44b%3A0x4a4f3b2f47248d5b!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1586562924357!5m2!1sen!2sus" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Google Maps location of the conference venue">
+      </iframe>
+    </section>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019126628164!2d-122.41941568468263!3d37.7749292797595"
-      width="600"
-      height="450"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+    <section>
+      <h2>Send Us a Message</h2>
+      <form>
+        <div>
+          <label for="contact-name">Name:</label>
+          <input type="text" id="contact-name" name="contact-name" required />
+        </div>
 
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br><br>
+        <div>
+          <label for="contact-email">Email:</label>
+          <input type="email" id="contact-email" name="contact-email" required />
+        </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br><br>
+        <div>
+          <label for="contact-message">Message:</label>
+          <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+        </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea><br><br>
-
-      <button type="submit">Send Message</button>
-    </form>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>Copyright © 2025 TechCon</p>
+    <p>© TechCon 2024. All rights reserved.</p>
   </footer>
 </body>
 </html>
